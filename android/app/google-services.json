@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "727710266289",
+    "project_id": "lostthingfindapplicationorg",
+    "storage_bucket": "lostthingfindapplicationorg.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727710266289:android:3e5c5b108813dd5fd70390",
+        "android_client_info": {
+          "package_name": "com.example.lostthingfindapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCBgwGRDK84DfkVFuxcwTNuFtwnBwTcm0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
