@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:lostthingfindapplication/utils/colors.dart';
+//import 'package:lostthingfindapplication/utils/colors.dart';
 import 'package:lostthingfindapplication/widgets/post_card.dart';
 
 class SearchScreen extends StatefulWidget {
@@ -23,11 +23,22 @@ class _SearchScreenState extends State<SearchScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: mobileBackgroundColor,
+        automaticallyImplyLeading: false,
+        backgroundColor: Colors.blue, // Set your preferred color
         title: TextFormField(
           controller: searchController,
-          decoration: const InputDecoration(
-            labelText: 'Search for post',
+          style: TextStyle(color: Colors.white), // Text color
+          decoration: InputDecoration(
+            labelText: 'Search for posts',
+            labelStyle: TextStyle(color: Colors.white70), // Label text color
+            suffixIcon: IconButton(
+              icon: Icon(Icons.search, color: Colors.white),
+              onPressed: () {
+                setState(() {
+                  isShowPosts = true;
+                });
+              },
+            ),
           ),
           onFieldSubmitted: (String _) {
             setState(() {

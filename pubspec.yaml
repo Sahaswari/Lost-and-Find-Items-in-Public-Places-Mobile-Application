@@ -34,7 +34,7 @@ dependencies:
   firebase_core: ^2.24.2
   firebase_storage: ^11.5.6
   flutter:
-    sdk: flutter
+    sdk: flutter  
   flutter_svg: ^2.0.9
   image_picker: ^1.0.5
   intl: ^0.19.0
@@ -45,6 +45,13 @@ dev_dependencies:
   flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/playstore.png"
+  image_path_ios: "assets/playstore.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -58,6 +65,8 @@ flutter:
   assets:
     - assets/iconProR.png
     - assets/namer.png
+    - assets/
+   
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
   # For details regarding adding assets from package dependencies, see
